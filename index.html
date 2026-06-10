@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbit Sites | Web Design</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#050B18;
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:250px;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:4rem;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.blue{
+    color:#1DA1FF;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    color:#b0c4ff;
+    max-width:700px;
+    margin-bottom:35px;
+}
+
+.btn{
+    background:linear-gradient(90deg,#1DA1FF,#2563EB);
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px #1DA1FF;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#0b1428;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(29,161,255,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(29,161,255,.25);
+}
+
+.card h3{
+    color:#1DA1FF;
+    margin-bottom:15px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    color:#d1d8f0;
+}
+
+.cta{
+    text-align:center;
+}
+
+.coming{
+    color:#1DA1FF;
+    font-size:1.4rem;
+    margin:20px 0;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    color:#7d8ab5;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.orbit{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(29,161,255,.15);
+    border-radius:50%;
+    animation:spin 25s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+</style>
+</head>
+<body>
+
+<div class="orbit"></div>
+
+<header>
+
+<!-- HIER DEIN LOGO EINFÜGEN -->
+<img src="logo.png" alt="Orbit Sites Logo" class="logo">
+
+<h1>ORBIT <span class="blue">SITES</span></h1>
+
+<p class="subtitle">
+Modernes Webdesign für Unternehmen, Freelancer und Kreative.
+Professionelle Websites mit Fokus auf Design, Performance und Benutzerfreundlichkeit.
+</p>
+
+<a href="#" class="btn">
+Fiverr Profil (bald verfügbar)
+</a>
+
+</header>
+
+<section>
+
+<h2 class="section-title">
+Unsere Leistungen
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Moderne und professionelle Websites für jedes Business.</p>
+</div>
+
+<div class="card">
+<h3>Responsive Design</h3>
+<p>Perfekte Darstellung auf Smartphone, Tablet und Desktop.</p>
+</div>
+
+<div class="card">
+<h3>Performance</h3>
+<p>Schnelle Ladezeiten für eine optimale Nutzererfahrung.</p>
+</div>
+
+<div class="card">
+<h3>Support</h3>
+<p>Hilfe bei Anpassungen und Weiterentwicklung deiner Website.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Warum Orbit Sites?
+</h2>
+
+<div class="about">
+<p>
+Orbit Sites entwickelt moderne Webseiten, die professionell aussehen
+und Vertrauen schaffen. Unser Ziel ist es, Unternehmen und Selbstständigen
+eine starke Online-Präsenz zu ermöglichen – einfach, zuverlässig und effizient.
+</p>
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2 class="section-title">
+Projekt starten
+</h2>
+
+<p class="coming">
+🚀 Fiverr-Profil aktuell im Aufbau
+</p>
+
+<a href="#" class="btn">
+Demnächst auf Fiverr
+</a>
+
+</section>
+
+<footer>
+© 2025 Orbit Sites • Web Design
+</footer>
+
+</body>
+</html>
